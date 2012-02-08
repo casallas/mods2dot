@@ -1,0 +1,34 @@
+#mods2dot
+
+Juan Sebastian Casallas <casallas@iastate.edu>
+
+## About
+
+These is a Python script to convert MODS XML reference files into Graphviz .dot or .gv files
+
+Right now the script only generates the adequate nodes, without any edges between them. Each node
+should look like:
+
+<table>
+	<tr><td>Author</td></tr>
+	<tr><td>Year</td></tr>
+	<tr><td>Journal or Conference</td></tr>
+</table>
+
+If you want to create edges, just do `NODE1ID -> NODE2ID;` before the end of the graph `}`
+
+## Wishlist
+
+- A gui for making the links between the nodes.
+- "Intelligent linking" based on, say, citations.
+
+## See also
+
+[vyzkumap](http://vyzkumap.net/) is  a pretty cool webapp that does something 
+similar to what I'd like to do.
+
+
+## Disclaimer/Licensing
+
+This script and this README (the "Software") is released under the 
+[MIT license](http://www.opensource.org/licenses/mit-license.php), see LICENSE.txt.
